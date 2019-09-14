@@ -43,7 +43,7 @@ end
 
 def scan(host, ports)
 
-  is_port_range = false    
+  is_port_range = false
 
   if ports.include?("-")
     start_port = ports.split("-")[0].to_i
@@ -54,14 +54,14 @@ def scan(host, ports)
   end
 
   #binding.pry
-  
+
   if is_port_range
-        
+
     (start_port..end_port).each do |port|
       scan_port(host, port)
     end
 
-  else 
+  else
     scan_port(host, ports)
 
   end
