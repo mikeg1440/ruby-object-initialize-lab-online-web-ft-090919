@@ -69,4 +69,4 @@ def scan(host, ports)
 end
 
 
-scan("localhost", "1-100")
+scan("localhost", "1-1000")
